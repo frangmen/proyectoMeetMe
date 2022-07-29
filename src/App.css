@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+ 
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+:root {
+  --color-default: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-default: #252b30;
+  }
+}
+
+[data-theme='dark'] {
+  --color-default: #252b30;
+}
+
+[data-theme='black'] {
+  --color-default: #000000
+  ;
+}
+
+[data-theme='🌸'] {
+  --color-default: #ffabc8;
+}
+
+[data-theme='🐬'] {
+  --color-default: #7ec6ff;
+}
+
+[data-theme='🐤'] {
+  --color-default: #ffd65a;
+}
+
+body {
+  background-color: var(--color-default);
+}
