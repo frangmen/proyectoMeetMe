@@ -5,10 +5,10 @@ import {Link} from "react-router-dom";
 
 
 const navigation = [
-  { name: "Matching", href: "#", current: true },
-  { name: "You", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Testimonies", href: "#", current: false },
+  { name: "Matching", id: 1, current: true },
+  { name: "You", id: 2, current: false },
+  { name: "Projects", id: 3, current: false },
+  { name: "About", id: 4, current: false },
 ];
 
 function classNames(...classes) {
@@ -51,9 +51,9 @@ export default function NavBarNavigation() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link 
                         key={item.name}
-                        href={item.href}
+                        to={`/${item.name.toLowerCase()}`}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -63,7 +63,7 @@ export default function NavBarNavigation() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

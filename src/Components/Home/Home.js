@@ -1,14 +1,12 @@
 import React from "react";
-import ReadyPage from "../ReadyPage/ReadyPage";
-import AboutUsBanner from "../AboutUs/AboutUs";
+import Body from "../Body/Body";
+import AboutUsBanner from "../AboutUs/AboutUsBanner";
 
 const Home = () => {
   return (
     <>
-      <ReadyPage />
-      <header className="App-header">
-        <AboutUsBanner />
-      </header>
+      <Body />
+      
     </>
   );
 };

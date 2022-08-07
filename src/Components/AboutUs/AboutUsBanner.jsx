@@ -8,12 +8,12 @@ const AboutUsBanner = () => {
         artificial elegimos el mejor match para vos!
       </div>
       <div className="inline-flex rounded-md shadow">
-        <a
+        <button
           href="#"
           className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
         >
           Get started
-        </a>
+        </button>
       </div>
       <div>Sólo necesitas registrarte y comenzar a matchear!</div>
     </>

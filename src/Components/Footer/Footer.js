@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer } from "react-daisyui";
 import { Link } from "react-router-dom";
+import Modal from "../Modal/Modal";
 
 const FooterWithLinks = () => {
   return (
@@ -27,7 +28,7 @@ const FooterWithLinks = () => {
           <Link to="/" className="link link-hover">Marketing</Link>
           <Link to="/" className="link link-hover">Advertisement</Link>
         </div>
-      
+      <Modal/>
       </Footer>
     </>
   );
