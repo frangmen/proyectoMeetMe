@@ -7,11 +7,12 @@ import NoMatch from "./Components/Pages/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { themeChange } from "theme-change";
 import { useEffect } from "react";
+import Projects from './Components/Pages/Projects';
 
 const About = lazy(() => import("./Components/Pages/About"));
 const Matching = lazy(() => import("./Components/Pages/Matching"));
 const You = lazy(() => import("./Components/Pages/You"));
-const Projects = lazy(() => import("./Components/Pages/Projects"));
+/* const Projects = lazy(() => import("./Components/Pages/Projects")); */
 
 const App = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const App = () => {
           <Route path="*" element={<NoMatch />} />
           <Route path="/" element={<Home />} />
           <Route path="/matching" element={<Suspense fallback={<h1>"Loading..."</h1>}><Matching/></Suspense>} />
-          <Route path="/projects" element={<Suspense fallback={<h1>"Loading..."</h1>}><Projects/></Suspense>} />
+          <Route path="/projects" element={<Projects/>} />
           <Route path="/About" element={<Suspense fallback={<h1>"Loading..."</h1>}><About/></Suspense>} />
           <Route path="/you" element={<Suspense fallback={<h1>"Loading..."</h1>}><You/></Suspense>} />
         </Routes>

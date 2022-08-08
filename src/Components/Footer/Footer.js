@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer } from "react-daisyui";
+import "./footer.css";
 import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
 
@@ -20,16 +20,16 @@ const FooterWithLinks = () => {
           <option value="🐤">🐤 Yellow</option>
         </select>
       </div>
-      <Footer className="p-12 bg-neutral text-neutral-content">
-        <div>
-          <Footer.Title>Services</Footer.Title>
+      <div className="p-12 bg-neutral text-neutral-content">
+          <h1>Services</h1>
+        <div className="linksFooter">
           <Link to="/" className="link link-hover">Branding</Link>
           <Link to="/" className="link link-hover">Design</Link>
           <Link to="/" className="link link-hover">Marketing</Link>
           <Link to="/" className="link link-hover">Advertisement</Link>
         </div>
+      </div>
       <Modal/>
-      </Footer>
     </>
   );
 };

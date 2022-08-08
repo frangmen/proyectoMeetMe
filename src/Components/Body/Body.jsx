@@ -1,4 +1,5 @@
-import AboutUsBanner from "../AboutUs/AboutUsBanner";
+import AboutUsBanner from "../BannerAboutUs/AboutUsBanner";
+import Confetti from "../Helpers/Confetti";
 
 const Body = () => {
   return (
@@ -31,6 +32,7 @@ const Body = () => {
         </div>
       </div>
           <header className="App-header">
+        <Confetti/>
         <AboutUsBanner />
       </header>
     </div>
