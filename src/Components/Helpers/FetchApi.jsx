@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import UserCard from "../UserCard/UserCard";
+import Spinner from "./Spinner";
 
 const FetchApi = () => {
     const [user, setUser] = useState({});
@@ -42,7 +43,7 @@ const FetchApi = () => {
 
     return (
       <div>
-     { loading ?  <div>Loading</div> : <UserCard user={user}/> }
+     { loading ?  <Spinner/> : <UserCard user={user}/> }
      </div>
     );
   }
