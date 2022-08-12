@@ -3,7 +3,7 @@ import Form from '../Form/Form'
 
 const Matching = () => {
   return (
-    <Form/>
+   <h1>Matching</h1>
   )
 }
 
