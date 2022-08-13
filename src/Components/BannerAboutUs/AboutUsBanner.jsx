@@ -1,21 +1,18 @@
 import React from "react";
+import ModalReact from "../Modal/Modal";
 
 const AboutUsBanner = () => {
   return (
     <>
       <div>
-        Meet es una plataforma de dating online donde por medio de inteligencia
-        artificial elegimos el mejor match para vos!
+      ❤
+        Meet is the first online dating platform using AI to match you with the
+        best person available in the planet just for you ❤
       </div>
       <div className="inline-flex rounded-md shadow">
-        <button
-          href="#"
-          className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-        >
-          Get started
-        </button>
+        <ModalReact/>
       </div>
-      <div>Sólo necesitas registrarte y comenzar a matchear!</div>
+      <div>You just need to register and start matching now!</div>
     </>
   );
 };

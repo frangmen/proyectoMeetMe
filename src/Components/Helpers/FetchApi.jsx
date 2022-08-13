@@ -22,7 +22,7 @@ const FetchApi = () => {
               reject(err);
             }
             );
-        }, 500);
+        }, 2500);
         
       }
     );

@@ -7,6 +7,7 @@ const Spinner = () => {
   color="#e0c1da"
   size={115}
   margin={16}
+  marginleft={160}
 />
   )
 }

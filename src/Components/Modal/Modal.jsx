@@ -35,7 +35,7 @@ const ModalReact = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700" onClick={openModal}>Get Started</button>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
