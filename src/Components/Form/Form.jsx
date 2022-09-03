@@ -1,9 +1,18 @@
 import FetchApi from "../Helpers/FetchApi"
 import "./form.css"
 import {Link} from "react-router-dom"
+import {useState} from 'react'
 
 export default function Form() {
+
+  const [boton, setBoton] = useState(true)
     return (
+
+      <>
+
+      <h1>Are you feeling lucky today?</h1>
+
+{boton? 
       <div className="form">
         <div >
           <div className="md:grid md:grid-cols-3 md:gap-6">
@@ -16,7 +25,7 @@ export default function Form() {
               </div>
             </div>
             <div className="mt-5 md:mt-0 md:col-span-2">
-              <form action="#" method="POST">
+              <form action="#">
                 <div className="shadow sm:rounded-md sm:overflow-hidden">
                   <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
                     <div className="grid grid-cols-3 gap-6">
@@ -121,7 +130,7 @@ export default function Form() {
               </div>
             </div>
             <div className="mt-5 md:mt-0 md:col-span-2">
-              <form action="#" method="POST">
+              <form action="#">
                 <div className="shadow overflow-hidden sm:rounded-md">
                   <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
                     <fieldset>
@@ -220,22 +229,32 @@ export default function Form() {
                       </div>
                     </fieldset>
                   </div>
+
+                 
                   <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                   <Link to="./projects">
-                    <button
+                   
+                    <button onClick={()=>setBoton(false)}       
                     
                     
                       className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                       Save
                     </button>
-                    </Link>
-                  </div>
+                   
+                  </div>  
                 </div>
               </form>
             </div>
           </div>
-        </div>
-      </div>
-    )
+        </div>     
+   </div>
+
+   : <><h1><strong>OH MY GOD !!!</strong></h1>
+   <FetchApi/> </>
+}</>
+       )
   }
+
+
+
+  

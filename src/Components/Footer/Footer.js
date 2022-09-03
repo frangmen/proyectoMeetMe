@@ -29,7 +29,6 @@ const FooterWithLinks = () => {
           <Link to="/" className="link link-hover">Advertisement</Link>
         </div>
       </div>
-      <Modal/>
     </>
   );
 };
